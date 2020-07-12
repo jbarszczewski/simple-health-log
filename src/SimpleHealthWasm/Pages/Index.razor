@@ -1,0 +1,34 @@
+﻿@page "/"
+@inject ISpreadsheetService spreadsheetService;
+<h1>GetFile</h1>
+<input @bind="input" />
+<br />
+<button @onclick="LoadReadings">Get Readings</button>
+
+<table>
+	<thead>
+		<tr>
+			<th>Taken On</th>
+			<th>Sys</th>
+			<th>Dia</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var reading in readings) {
+			<tr>
+				<td>@reading.TakenOn</td>
+				<td>@reading.Sys</td>
+				<td>@reading.Dia</td>
+			</tr>
+		}
+		<tr></tr>
+	</tbody>
+</table>
+@code {
+	private string input = string.Empty;
+	private IEnumerable<HeartPressureReading> readings = Enumerable.Empty<HeartPressureReading>();
+
+	private async Task LoadReadings() {
+		readings = await spreadsheetService.GetReadings();
+	}
+}

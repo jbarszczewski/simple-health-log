@@ -24,7 +24,7 @@ jobs:
         with:
           dotnet-version: 3.1.300
       - name: Build App
-        run: dotnet publish -c Release -o published      
+        run: dotnet publish ~/src/SimpleHealthWasm/SimpleHealthWasm.csproj -c Release -o published     
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v0.0.1-preview
