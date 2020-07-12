@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{93EF6647-B70
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleHealthWasm", "src\SimpleHealthWasm\SimpleHealthWasm.csproj", "{0449448E-2633-4D6B-86C0-8B2C0CCF57C9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpreadsheetHandler", "src\SpreadsheetHandler\SpreadsheetHandler.csproj", "{7FD8EF03-406B-4F40-A0E6-BED1A6A06061}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpreadsheetHandlers", "src\SpreadsheetHandlers\SpreadsheetHandlers.csproj", "{7FD8EF03-406B-4F40-A0E6-BED1A6A06061}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace SpreadsheetHandler {
+namespace SpreadsheetHandlers {
 	public static class GetReadings {
 		[FunctionName("GetReadings")]
 		public static async Task<IActionResult> Run(
