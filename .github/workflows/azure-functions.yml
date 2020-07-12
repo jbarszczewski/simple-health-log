@@ -24,7 +24,7 @@ jobs:
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
     - name: Build App
-      run: dotnet publish src/SpreadsheetHandler/SpreadsheetHandler.csproj -c Release -o ${{ env.OUTPUT_PATH }}
+      run: dotnet publish src/SpreadsheetHandlers/SpreadsheetHandlers.csproj -c Release -o ${{ env.OUTPUT_PATH }}
     - name: Package functions
       uses: actions/upload-artifact@v2
       with:
