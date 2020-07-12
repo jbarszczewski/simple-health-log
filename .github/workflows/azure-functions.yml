@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [build]
     env:
-        FUNC_APP_NAME: spreadsheethandlers  
+        FUNC_APP_NAME: SpreadsheetHandler20200712183049  
     steps:
     - name: Download function
       uses: actions/download-artifact@v2
