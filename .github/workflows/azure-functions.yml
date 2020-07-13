@@ -1,4 +1,4 @@
-name: .NET Core Azure Functions CI/CD
+name: Azure Functions .NET Core CI/CD
 env:
     OUTPUT_PATH: ${{ github.workspace }}/.output
     DOTNET_VERSION: "3.1.300"

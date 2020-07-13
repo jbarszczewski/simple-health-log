@@ -1,4 +1,6 @@
-name: Azure Static Web Apps CI/CD
+name: Azure Static Web Apps .NET Core CI/CD
+env:
+  DOTNET_VERSION: "3.1.300"
 
 on:
   push:
@@ -19,13 +21,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Setup .NET Core SDK
+      - name: Setup .NET Core ${{ env.DOTNET_VERSION }} SDK
         uses: actions/setup-dotnet@v1.5.0
         with:
-          dotnet-version: 3.1.300
+          dotnet-version: ${{ env.DOTNET_VERSION }}
       - name: Build App
         run: dotnet publish src/SimpleHealthWasm/SimpleHealthWasm.csproj -c Release -o published     
-      - name: Build And Deploy
+      - name: Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v0.0.1-preview
         with:
