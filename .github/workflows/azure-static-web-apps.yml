@@ -1,6 +1,6 @@
 name: Azure Static Web Apps .NET Core CI/CD
 env:
-  DOTNET_VERSION: "3.1.300"
+  DOTNET_VERSION: "3.1.5"
 
 on:
   push:
