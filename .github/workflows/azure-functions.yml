@@ -1,7 +1,7 @@
 name: Azure Functions .NET Core CI/CD
 env:
     OUTPUT_PATH: ${{ github.workspace }}/.output
-    DOTNET_VERSION: "3.1.5"
+    DOTNET_VERSION: "3.1.300"
 
 on:
   push:
